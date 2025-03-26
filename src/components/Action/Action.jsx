@@ -65,7 +65,7 @@ export default observer(() => {
     return (
         <div className='Action_wrapper' ref={app}>
             <div className='Action_decorTop  free_img'>
-                <img src="/img/Action/bubble0.webp" alt="" />
+                <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/bubble0.webp`} alt="" />
             </div>
             <div className='Action_decorTop_text  free_img'>
                 <div className='Action_decorTop_text_header'>
@@ -76,18 +76,18 @@ export default observer(() => {
                 </div>
             </div>
             <div className='Action_decorTop Action_decor1 free_img'>
-                <img src="/img/Action/bubble1.webp" alt="" />
+                <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/bubble1.webp`} alt="" />
             </div>
             <div className='Action_decorTop Action_decor2 free_img'>
-                {/* <img src="/img/Action/bubble2.webp" alt="" /> */}
+                {/* <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/bubble2.webp`} alt="" /> */}
             </div>
             <div className='Action_decorTop Action_decor3 free_img'>
-                <img src="/img/Action/bubble3.webp" alt="" />
+                <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/bubble3.webp`} alt="" />
             </div>
             <div className='Action' id='Action'>
                 <div className='Action__container'>
                     <p className='Action__container-title'>/ {t('Galileo in Action')} /</p>
-                    {/* <img src="/img/Action/bubbles.svg" alt="" className='Action__container-img' /> */}
+                    {/* <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/bubbles.svg`} alt="" className='Action__container-img' /> */}
                     <div className='Action__decorPlace' id='Clients'></div>
                     <p className='Action__container-title Action_partners_header'>/ {t('Our clients')} /</p>
 
@@ -99,10 +99,10 @@ export default observer(() => {
                         }
                     </div>
                     <div className='Action__container-demo'>
-                        <img src="/img/Action/demo.svg" alt="" className='Action__container-demo-img' />
-                        <img src="/img/Action/demoPhone.png" alt="" className='Action__container-demo-img-phone' />
-                        <a href='#' target='_blank'>{t('Get the App')} <img src="/img/arrow.png" alt="" /></a>
-                        <img src="/img/Action/phone.png" alt="" className='Action__container-demo-phone' />
+                        <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/demo.svg`} alt="" className='Action__container-demo-img' />
+                        <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/demoPhone.png`} alt="" className='Action__container-demo-img-phone' />
+                        <a href='#' target='_blank'>{t('Get the App')} <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/arrow.png`} alt="" /></a>
+                        <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/Action/phone.png`} alt="" className='Action__container-demo-phone' />
                     </div>
                 </div>
             </div>

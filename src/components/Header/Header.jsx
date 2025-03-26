@@ -19,7 +19,7 @@ const Header = observer(() => {
     return (
         <div className='Header'>
             <div className='Header__item left'>
-                <img src="/img/logo.svg" alt="" style={{ opacity: modalStore.isOpen ? 0 : 1, transition: "opacity 0.3s ease" }} />
+                <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/logo.svg`} alt="" style={{ opacity: modalStore.isOpen ? 0 : 1, transition: "opacity 0.3s ease" }} />
             </div>
             <div className='Header__item center'>
                 <a href='#About'><span>/</span> {t('About')} <span>/</span></a>
@@ -38,7 +38,7 @@ const Header = observer(() => {
                 </div>
                 </>
             )}
-                <a>{t('Get the App')} <img src="/img/arrow.png" alt="" /></a>
+                <a>{t('Get the App')} <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/arrow.png`} alt="" /></a>
                 <div className={`Header__item-burger ${modalStore.isOpen ? "active" : ""}`}
                     onClick={modalStore.toggleModal} >
                     <span></span>

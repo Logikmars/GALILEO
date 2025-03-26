@@ -79,11 +79,11 @@ export default observer(() => {
                     <p className='Footer__title'>{t('Start Using Galileo Today!')}</p>
                     <div className='Footer__btn'>
                         <a href='#' target='_blank' className='Footer__btn-item Footer__btn-item-left'>{t('Contact us')}</a>
-                        <a href='#' target='_blank' className='Footer__btn-item Footer__btn-item-right'>{t('Get the App')}  <img src="/img/arrow.png" alt="" /></a>
+                        <a href='#' target='_blank' className='Footer__btn-item Footer__btn-item-right'>{t('Get the App')}  <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/arrow.png`} alt="" /></a>
                     </div>
                     <div className='Footer__item'>
                         <div className='Footer__item-left'>
-                            <img src="/img/logo.svg" alt="" className='Footer__item-left-logo' />
+                            <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/logo.svg`} alt="" className='Footer__item-left-logo' />
                             <div className='Footer__item-left-social'>
                                 <Media />
                             </div>

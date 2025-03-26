@@ -19,7 +19,7 @@ const Modal = observer(() => {
 
     return (
         <div className="Modal">
-            <img src="/img/logo.svg" alt="Galileo Logo" className="Modal__logo" />
+            <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/logo.svg`} alt="Galileo Logo" className="Modal__logo" />
             <a>{t('About Galileo')}</a>
             <a>{t('Features')}</a>
             <a>{t('Contacts')}</a>

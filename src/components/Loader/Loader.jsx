@@ -27,7 +27,7 @@ export default observer(() => {
         <>
             {
                 loaderStore.loading && <div className='Loader'>
-                    <img src="/img/loader.svg" alt="" />
+                    <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/loader.svg`} alt="" />
                     <div className='Loader_text'>
                         {t('Loading')}
                         {Array(((loaderCounter) % 4))

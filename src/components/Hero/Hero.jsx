@@ -16,7 +16,7 @@ export default observer(() => {
             <p className='Hero__description'>{t('Galileo bridges')}</p>
             <div className='Hero__btn'>
                 <a href='#' target='_blank' className='Hero__btn-item Hero__btn-item-left'>{t('Learn More')}</a>
-                <a href='#' target='_blank' className='Hero__btn-item Hero__btn-item-right'>{t('Get Started')} <img src="/img/arrow.png" alt="" /></a>
+                <a href='#' target='_blank' className='Hero__btn-item Hero__btn-item-right'>{t('Get Started')} <img src={`${import.meta.env.VITE_APP_BASE_PATH}/img/arrow.png`} alt="" /></a>
             </div>
         </div>
     )
